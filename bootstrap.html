@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Web Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hotel Booking</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Booking</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hotel Booking</h1>
+            <p>Welcome to our hotel booking web application!</p>
+            <img src="https://www.ahstatic.com/photos/8188_ho_00_p_1024x768.jpg" alt="Hotel Image" class="img-fluid">
+        </div>
+        <form id="search-form">
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter location">
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" class="form-control" id="checkin">
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" class="form-control" id="checkout">
+            </div>
+            <div class="form-group">
+                <label for="guests">Guests</label>
+                <select class="form-control" id="guests">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
